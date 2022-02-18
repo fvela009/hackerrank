@@ -19,9 +19,10 @@ class Result {
      */
 
     public static void miniMaxSum(List<Integer> arr) {
-    int totalSum = 0; 
-    int min, max; 
-    int[] sumArr = new int[5];
+        //used long to avoid ovrerflow
+    long totalSum = 0; 
+    long min, max; 
+    long[] sumArr = new long[5];
     
     for(int i = 0; i < arr.size(); i++){
         totalSum += arr.get(i); 
